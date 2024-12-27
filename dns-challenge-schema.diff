@@ -1,0 +1,27 @@
+--- dns-challenge-schema.json.dist      2024-12-27 18:04:23.000000000 +0100
++++ dns-challenge-schema.json   2024-12-27 17:27:21.000000000 +0100
+@@ -161,6 +161,24 @@
+    "edgedns" : {},
+    "euserv" : {},
+    "exoscale" : {},
++   "fmdns" : {
++      "description" : "Provide API end point address, auth token and domain id.",
++      "fields" : {
++         "FMDNS_API_ENDPOINT" : {
++            "description" : "The facileManager API endpoint address",
++            "type" : "string"
++         },
++         "FMDNS_API_TOKEN" : {
++            "description" : "The facileManager API auth token",
++            "type" : "string"
++         },
++         "FMDNS_API_DOMAIN_ID" : {
++            "description" : "The facileManager API domain id",
++            "type" : "string"
++         }
++      },
++      "name" : "facileManager DNS API"
++   },
+    "freedns" : {},
+    "fornex": {},
+    "gandi_livedns" : {},
