@@ -33,6 +33,6 @@ systemctl restart pvedaemon
 
 Now you should be able to find "facileManager DNS API" in the list of ProxMox ACME DNS plugins.
 
-I suggest to set a delay value of at least 360s, since since facileManager updates dns zones usually every 300s (I use 600 to avoid problems with dns propagation).
+I suggest to set a delay value of at least 360s, since facileManager updates dns zones usually every 300s (I use 600 to avoid problems with dns propagation).
 
 Have a nice day :-)
