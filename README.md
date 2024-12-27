@@ -10,6 +10,8 @@ At the moment, all changes must be done manually. I opened a pull request to add
 
 Place dnsapi.php in the same server of facileManager client (where the file client.php resides). The file must be rachable via https by your ProxMox hosts, and I suggest to create a dedicated domain for the purpose (i.e. https://my-fm-api-server.com/dnsapi.php).
 
+Change the argument of str_replace with your host domain name (value _acme-challange.myhost.mydomain.ext should become _acme-challenge.myhost), and the path to your dnsapi.sh script.
+
 Place dnsapi.sh in the same server, OUTSIDE any public folder of the web server.
 
 Modify dnsapi.sh with the correct path to your facileManager client.php.
