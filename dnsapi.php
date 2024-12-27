@@ -13,7 +13,7 @@ foreach ($postdata as $key => $val) {
                 $parameters .= " " . $key . "=\"" . htmlspecialchars(strip_tags($val), ENT_NOQUOTES) . "\"";
         }
         elseif ($key == "name") {
-                $parameters .= " " . $key . "=" . str_replace(".my.toplevel.domain", "", htmlspecialchars(strip_tags($val), ENT_NOQUOTES));
+                $parameters .= " " . $key . "=" . str_replace(".mydomain.ext", "", htmlspecialchars(strip_tags($val), ENT_NOQUOTES));
         }
         else {
                 $parameters .= " " . $key . "=" . htmlspecialchars(strip_tags($val), ENT_NOQUOTES);
