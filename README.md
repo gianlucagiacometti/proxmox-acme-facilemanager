@@ -2,7 +2,7 @@
 Script hooks for acme.sh, ProxMox and facileManager DNS
 
 NOTE:
-At the moment, all changes must be done manually. I opened a pull request to add dns_fmdns.sh to acme.sh official repository, and I opened a pull request for some changes in facileManager required to perform automated dns record updates.
+At the moment, all changes must be done manually. I opened a pull request to add dns_fmdns.sh to acme.sh official repository(https://github.com/acmesh-official/acme.sh/pull/6173), and I opened a pull request for some changes in facileManager required to perform automated dns record updates (https://github.com/WillyXJ/facileManager/pull/645).
 
 ## Steps to install:
 
