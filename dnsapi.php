@@ -20,7 +20,7 @@ foreach ($postdata as $key => $val) {
         }
 }
 
-exec("sudo /path/to/my/scripts/dnsapi.sh setHost" . $parameters, $output);
+exec("sudo /path/to/my/scripts/dnsapi.sh api" . $parameters, $output);
 
 print(empty($output) ? "" : $output[0]);
 
