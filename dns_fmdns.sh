@@ -97,7 +97,7 @@ _fmDnsApi_addRecord() {
   _info "API $curResult"
   _debug "Calling facileManager API: '${curData}' '${FMDNS_API_ENDPOINT}'"
   _debug "Result of zone add: '$curResult'"
-  if ! _contains "$curResult" '(202) Success'; then
+  if ! _contains "$curResult" 'Success'; then
     if [ -z "$curResult" ]; then
       _err "Empty response"
     else
@@ -116,7 +116,7 @@ _fmDnsApi_removeRecord() {
   _info "API $curResult"
   _debug "Calling facileManager API: '${curData}' '${FMDNS_API_ENDPOINT}'"
   _debug "Result of zone delete: '$curResult'"
-  if ! _contains "$curResult" '(202) Success'; then
+  if ! _contains "$curResult" 'Success'; then
     if [ -z "$curResult" ]; then
       _err "Empty response"
     else
